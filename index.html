@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce_Product_Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+            <img src="Images/Front_View.png" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="Images/Front_View.png" onclick="img('Images/Front_View.png')">
+          <img src="Images/Back_View.png" onclick="img('Images/Back_View.png')">
+          <img src="Images/Collar_View.png" onclick="img('Images/Collar_View.png')">
+          <img src="Images/Fabric_View.png" onclick="img('Images/Fabric_View.png')">
+        </div>
+      </div>
+      <div class="right">
+        <h1>Tops</h1>
+        <h3>₹ 999</h3>
+        <p><b>Elevate your style with this chic brown top, 
+            meticulously crafted to offer a blend of elegance and comfort. 
+            The long sleeves make it a versatile choice for various occasions, 
+            ensuring a perfect addition to your wardrobe.</b></p>
+        <select>
+            <option>Select Size</option>
+            <option>XXS</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+        </select>
+        <br><br><br>
+        <a href="" class="btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+</body>
+
+</html>
